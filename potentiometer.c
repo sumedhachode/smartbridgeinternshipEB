@@ -1,13 +1,19 @@
 /*
- * relay module.c
+ * potentiometer.c
  *
- * Created: 14-May-19 02:18:44 PM
+ * Created: 15-May-19 12:03:18 PM
  * Author : ALEKHYA
  */ 
 #include <avr/io.h>
 #define F_CPU 16000000UL
 #include<util/delay.h>
 #include<stdlib.h>
+void PWM_init()
+{
+	TCCR0=(1<<WGM00)|(1<<WGM01)|(1<<COM01)|(1<<CS00);
+	DDRB |=(1<<PB3);
+}
+
 
 #define enable  5
 #define registerselection  7
@@ -20,10 +26,11 @@ void send_a_string(char*string_of_characters);
 
 int main(void)
 {
+	
+	PWM_init();
 	DDRC=0XFF;
 	DDRA=0X00;
 	DDRD=0XFF;
-	DDRB=0XFF;
 	_delay_ms(50);
 	
 	ADMUX |=(1<<REFS0)|(0<<REFS1);
@@ -46,18 +53,13 @@ int main(void)
 	while (1)
 	{
 		DIGIT=ADC/4;
-		if (DIGIT>100)
-		{
-			PORTB=0X01;
-		}
-		if (DIGIT<70)
-		{
-			PORTB=0X02;
-		}
-		send_a_string("EMBEDDED SYSTEMS");
+	    
+		
+		
+		send_a_string("LUNCH BREAK");
 		send_a_command(0x80+0x40+0);
-		send_a_string("INTENSITY=");
-		send_a_command(0x80+0x40+10);
+		send_a_string("RESISTANCE=");
+		send_a_command(0x80+0x40+11);
 		
 		itoa(DIGIT,RESIST,10);
 		
@@ -65,6 +67,7 @@ int main(void)
 		send_a_string(RESIST);
 		send_a_string(" ");
 		send_a_command(0x80+0);
+		OCR0=DIGIT;
 		
 	}
 	
@@ -73,8 +76,7 @@ int main(void)
 void send_a_command(unsigned char command)
 {
 	PORTC=command;
-	PORTD
-	&=~(1<<registerselection);
+	PORTD&=~(1<<registerselection);
 	PORTD |=1<<enable;
 	_delay_ms(20);
 	PORTD&=~1<<enable;
