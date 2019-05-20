@@ -2,7 +2,7 @@
  * seven segment.c
  *
  * Created: 14-May-19 09:40:18 AM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #ifndef F_CPU
 #define F_CPU 16000000UL
