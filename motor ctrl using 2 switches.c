@@ -2,7 +2,7 @@
  * motor speed ctrl using four switches.c
  *
  * Created: 15-May-19 08:31:18 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #define F_CPU 8000000UL
 #include <avr/io.h>
