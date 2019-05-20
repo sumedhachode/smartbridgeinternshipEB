@@ -2,7 +2,7 @@
  * GccApplication5.c
  *
  * Created: 09-05-2019 22:56:51
- * Author : lenovo
+ * Author : sumedha
  */ 
 #ifndef F_CPU
 #define F_CPU 16000000UL // 16 MHz CLOCKSPEED
