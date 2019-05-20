@@ -2,7 +2,7 @@
  * servo motor2.c
  *
  * Created: 16-May-19 03:06:08 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */
 #include <avr/io.h>
 #define F_CPU 16000000UL
