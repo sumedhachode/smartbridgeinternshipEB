@@ -2,7 +2,7 @@
  * GccApplication1.c
  *
  * Created: 09-05-2019 14:17:24
- * Author : lenovo
+ * Author : sumedha
  */ 
 
 #ifndef F_CPU
