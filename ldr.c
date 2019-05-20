@@ -2,7 +2,7 @@
  * LDR1.c
  *
  * Created: 14-May-19 12:57:45 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #include <avr/io.h>
 #define F_CPU 16000000UL
