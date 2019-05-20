@@ -2,7 +2,7 @@
  * MOTOR CTRL USING POT.c
  *
  * Created: 15-May-19 02:49:11 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 
 #include <avr/io.h>
