@@ -2,7 +2,7 @@
  * relay module.c
  *
  * Created: 14-May-19 02:18:44 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #include <avr/io.h>
 #define F_CPU 16000000UL
