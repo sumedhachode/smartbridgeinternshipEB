@@ -2,7 +2,7 @@
  * PIR sensor.c
  *
  * Created: 13-May-19 10:45:20 AM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #ifndef F_CPU
 #define F_CPU 16000000UL
