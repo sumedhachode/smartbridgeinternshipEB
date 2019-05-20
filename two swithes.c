@@ -2,7 +2,7 @@
  * TWO SWITCHES.c
  *
  * Created: 10-May-19 12:38:40 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 
 #ifndef F_CPU
