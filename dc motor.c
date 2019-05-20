@@ -2,7 +2,7 @@
  * dc motor.c
  *
  * Created: 15-May-19 02:13:14 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #ifndef F_CPU
 #define F_CPU 16000000UL
