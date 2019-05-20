@@ -2,7 +2,7 @@
  * LED BLINKING WITHOUT DELAY.c
  *
  * Created: 15-May-19 10:42:48 AM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 #include <avr/io.h>
 #define LED PB0
