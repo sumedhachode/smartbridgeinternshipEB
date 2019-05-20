@@ -2,7 +2,7 @@
  * relay on and off using bluetooth.c
  *
  * Created: 16-May-19 12:55:20 PM
- * Author : ALEKHYA
+ * Author : sumedha
  */ 
 
 #ifndef F_CPU
